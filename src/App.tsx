@@ -7,6 +7,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from "./components/LandingPage";
 import Index from "./pages/Index";
 import Admin from "./pages/Admin";
+import AdminUsers from "./pages/AdminUsers";
+import AdminVocabulary from "./pages/AdminVocabulary";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +26,8 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/admin" element={<Admin />} />
+              <Route path="/admin/users" element={<AdminUsers />} />
+              <Route path="/admin/vocabulary" element={<AdminVocabulary />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </BrowserRouter>
