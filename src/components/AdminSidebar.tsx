@@ -32,7 +32,7 @@ const menuItems = [
   { title: "Người dùng", url: "/admin/users", icon: Users },
   { title: "Từ vựng", url: "/admin/vocabulary", icon: BookOpen },
   { title: "Bài học", url: "/admin/lessons", icon: FileText },
-  { title: "Trò chơi", url: "/admin/games", icon: Gamepad2 },
+  { title: "Đề thi thử", url: "/admin/exams", icon: Gamepad2 },
   { title: "Dịch thuật", url: "/admin/translation", icon: Languages },
   { title: "Phản hồi", url: "/admin/feedback", icon: MessageSquare },
   { title: "Cài đặt", url: "/admin/settings", icon: Settings },

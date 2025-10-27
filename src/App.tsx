@@ -9,6 +9,8 @@ import Index from "./pages/Index";
 import Admin from "./pages/Admin";
 import AdminUsers from "./pages/AdminUsers";
 import AdminVocabulary from "./pages/AdminVocabulary";
+import AdminStatistics from "./pages/AdminStatistics";
+import AdminExams from "./pages/AdminExams";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,8 +28,10 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/admin" element={<Admin />} />
+              <Route path="/admin/statistics" element={<AdminStatistics />} />
               <Route path="/admin/users" element={<AdminUsers />} />
               <Route path="/admin/vocabulary" element={<AdminVocabulary />} />
+              <Route path="/admin/exams" element={<AdminExams />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </BrowserRouter>
