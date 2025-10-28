@@ -28,13 +28,12 @@ import { Button } from "@/components/ui/button";
 
 const menuItems = [
   { title: "Tổng quan", url: "/admin", icon: LayoutDashboard },
-  { title: "Thống kê", url: "/admin/statistics", icon: BarChart3 },
   { title: "Người dùng", url: "/admin/users", icon: Users },
   { title: "Từ vựng", url: "/admin/vocabulary", icon: BookOpen },
   { title: "Bài học", url: "/admin/lessons", icon: FileText },
+  { title: "Bài viết", url: "/admin/posts", icon: MessageSquare },
   { title: "Đề thi thử", url: "/admin/exams", icon: Gamepad2 },
   { title: "Dịch thuật", url: "/admin/translation", icon: Languages },
-  { title: "Phản hồi", url: "/admin/feedback", icon: MessageSquare },
   { title: "Cài đặt", url: "/admin/settings", icon: Settings },
 ];
 
@@ -86,18 +85,6 @@ export function AdminSidebar() {
         </SidebarGroup>
       </SidebarContent>
 
-      <SidebarFooter className="border-t">
-        <SidebarMenu>
-          <SidebarMenuItem>
-            <SidebarMenuButton asChild>
-              <button className="w-full" onClick={() => window.location.href = "/"}>
-                <LogOut className="h-4 w-4" />
-                <span>Đăng xuất</span>
-              </button>
-            </SidebarMenuButton>
-          </SidebarMenuItem>
-        </SidebarMenu>
-      </SidebarFooter>
     </Sidebar>
   );
 }

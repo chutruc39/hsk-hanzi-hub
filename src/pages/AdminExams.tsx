@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { AdminSidebar } from "@/components/AdminSidebar";
-import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+import { AdminHeader } from "@/components/AdminHeader";
+import { SidebarProvider } from "@/components/ui/sidebar";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -71,12 +72,7 @@ const AdminExams = () => {
         <AdminSidebar />
         
         <main className="flex-1 bg-gradient-to-br from-background via-primary/5 to-secondary/10">
-          <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-            <div className="flex h-16 items-center gap-4 px-6">
-              <SidebarTrigger />
-              <h1 className="text-2xl font-bold">Quản lý đề thi thử</h1>
-            </div>
-          </header>
+          <AdminHeader />
 
           <div className="container py-8 space-y-8">
             {/* Stats Overview */}

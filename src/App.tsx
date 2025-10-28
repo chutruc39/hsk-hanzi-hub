@@ -9,7 +9,7 @@ import Index from "./pages/Index";
 import Admin from "./pages/Admin";
 import AdminUsers from "./pages/AdminUsers";
 import AdminVocabulary from "./pages/AdminVocabulary";
-import AdminStatistics from "./pages/AdminStatistics";
+import AdminPosts from "./pages/AdminPosts";
 import AdminExams from "./pages/AdminExams";
 import NotFound from "./pages/NotFound";
 
@@ -28,9 +28,9 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/admin" element={<Admin />} />
-              <Route path="/admin/statistics" element={<AdminStatistics />} />
               <Route path="/admin/users" element={<AdminUsers />} />
               <Route path="/admin/vocabulary" element={<AdminVocabulary />} />
+              <Route path="/admin/posts" element={<AdminPosts />} />
               <Route path="/admin/exams" element={<AdminExams />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
