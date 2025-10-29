@@ -11,6 +11,8 @@ import AdminUsers from "./pages/AdminUsers";
 import AdminVocabulary from "./pages/AdminVocabulary";
 import AdminPosts from "./pages/AdminPosts";
 import AdminExams from "./pages/AdminExams";
+import AdminReviews from "./pages/AdminReviews";
+import AdminGames from "./pages/AdminGames";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,6 +34,8 @@ const App = () => {
               <Route path="/admin/vocabulary" element={<AdminVocabulary />} />
               <Route path="/admin/posts" element={<AdminPosts />} />
               <Route path="/admin/exams" element={<AdminExams />} />
+              <Route path="/admin/reviews" element={<AdminReviews />} />
+              <Route path="/admin/games" element={<AdminGames />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </BrowserRouter>

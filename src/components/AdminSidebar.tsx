@@ -32,7 +32,9 @@ const menuItems = [
   { title: "Từ vựng", url: "/admin/vocabulary", icon: BookOpen },
   { title: "Bài học", url: "/admin/lessons", icon: FileText },
   { title: "Bài viết", url: "/admin/posts", icon: MessageSquare },
-  { title: "Đề thi thử", url: "/admin/exams", icon: Gamepad2 },
+  { title: "Đề thi thử", url: "/admin/exams", icon: FileText },
+  { title: "Đánh giá", url: "/admin/reviews", icon: MessageSquare },
+  { title: "Trò chơi", url: "/admin/games", icon: Gamepad2 },
   { title: "Dịch thuật", url: "/admin/translation", icon: Languages },
   { title: "Cài đặt", url: "/admin/settings", icon: Settings },
 ];
