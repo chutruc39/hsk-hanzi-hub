@@ -10,7 +10,7 @@ const PandaChatButton = () => {
     <>
       <Button
         onClick={() => setIsChatOpen(!isChatOpen)}
-        className="fixed bottom-6 right-6 h-16 w-16 rounded-full shadow-2xl hover:scale-110 transition-transform z-40 p-0 overflow-hidden bg-white border-2 border-primary"
+        className="fixed bottom-6 right-6 h-14 w-14 rounded-full shadow-2xl hover:scale-110 transition-transform z-40 p-0 overflow-hidden bg-white border-2 border-primary"
         style={{
           backgroundImage: `url(${pandaMascot})`,
           backgroundSize: "cover",

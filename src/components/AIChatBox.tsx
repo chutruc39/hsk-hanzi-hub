@@ -43,7 +43,7 @@ const AIChatBox = ({ onClose }: AIChatBoxProps) => {
   };
 
   return (
-    <Card className="fixed bottom-24 right-6 w-96 h-[500px] flex flex-col shadow-2xl border-primary/20 z-50 animate-scale-in">
+    <Card className="fixed bottom-24 right-6 w-[380px] h-[480px] flex flex-col shadow-2xl border-primary/20 z-50 animate-scale-in">
       <div className="flex items-center justify-between p-4 border-b bg-primary/5">
         <div className="flex items-center gap-2">
           <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
