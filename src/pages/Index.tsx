@@ -7,6 +7,7 @@ import WritingSection from "@/components/WritingSection";
 import HSKSection from "@/components/HSKSection";
 import GameSection from "@/components/GameSection";
 import TopicsSection from "@/components/TopicsSection";
+import PandaChatButton from "@/components/PandaChatButton";
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -33,12 +34,15 @@ const Index = () => {
   };
 
   return (
-    <LearningLayout 
-      activeSection={activeSection} 
-      onSectionChange={setActiveSection}
-    >
-      {renderSection()}
-    </LearningLayout>
+    <>
+      <LearningLayout 
+        activeSection={activeSection} 
+        onSectionChange={setActiveSection}
+      >
+        {renderSection()}
+      </LearningLayout>
+      <PandaChatButton />
+    </>
   );
 };
 

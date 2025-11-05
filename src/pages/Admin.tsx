@@ -6,6 +6,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, LineChart, Line, PieChart, Pie, Cell } from "recharts";
 import { Users, BookOpen, TrendingUp, Award } from "lucide-react";
+import PandaChatButton from "@/components/PandaChatButton";
 
 const Admin = () => {
   const scoreData = [
@@ -282,6 +283,7 @@ const Admin = () => {
             </div>
           </div>
         </main>
+        <PandaChatButton />
       </div>
     </SidebarProvider>
   );

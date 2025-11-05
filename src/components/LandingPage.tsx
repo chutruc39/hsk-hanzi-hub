@@ -18,6 +18,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import PandaChatButton from "./PandaChatButton";
 
 interface LandingPageProps {
   onStartLearning: () => void;
@@ -299,6 +300,7 @@ const LandingPage = ({ onStartLearning }: LandingPageProps) => {
           </p>
         </div>
       </footer>
+      <PandaChatButton />
     </div>
   );
 };
